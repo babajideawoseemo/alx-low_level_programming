@@ -18,7 +18,7 @@ if (first < second && second < third)
 {
 putchar(first);
 putchar(second);
-putchar(third);	      	  
+putchar(third);   	  
 if (first != '7')
 {
 putchar(',');
@@ -29,5 +29,5 @@ putchar(' ');
 }
 }
 putchar('\n');
-return (0); 
+return (0);
 }
