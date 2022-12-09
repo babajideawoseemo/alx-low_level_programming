@@ -1,1 +1,1 @@
-Introduction to C Programming
+Declaring variables, loops and conditions
