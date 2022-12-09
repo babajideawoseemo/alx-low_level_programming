@@ -14,7 +14,7 @@ putchar(b16);
 }
 for (b16 = 97; b16 <= 102; b16++)
 {
-putchar(b16)
+  putchar(b16);
 }
 putchar('\n');
 return (0);
