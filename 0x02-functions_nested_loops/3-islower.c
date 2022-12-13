@@ -10,7 +10,8 @@
 int _islower(int c)
 {
 int value = 'a';
-for (value = 'a'; value <= 'z'; value++){
+for (value = 'a'; value <= 'z'; value++)
+{
 if (c == value){
 return (1);
 }
