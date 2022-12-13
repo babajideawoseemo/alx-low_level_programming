@@ -15,6 +15,6 @@ if((i % 3 == 0) || (i % 5 == 0))
 count += i;
 }
 }
-printf("%d\n");
+ printf("%d\n", count);
 return (0);
 }
