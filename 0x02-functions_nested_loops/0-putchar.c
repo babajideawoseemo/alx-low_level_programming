@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*main - Entry Point fo the program to print putchar
-*Description: prints '_putchar'
-*Return: nothing. void.
+*main - Entry Point
+*'
+*Return: return nothing. void.
 */
 int main(void)
 {
