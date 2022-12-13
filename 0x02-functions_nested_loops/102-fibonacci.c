@@ -18,7 +18,7 @@ num2 = num3;
 if (num == 49)
 printf("\n");
 else
-printf(' ');
+printf(", ");
 }
 return (0);
 }
