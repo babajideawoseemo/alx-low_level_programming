@@ -6,10 +6,13 @@
 */
 int main(void)
 {
-char stringValue[] = "_putchar\n";
-int i = 0;
-for (i = 0; i < strlen(stringValue);i++)
-{
-_putchar(stringValue[i]);
-}
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchat('h');
+_putchar('a');
+_putchar('r');
 return (0);
+}
