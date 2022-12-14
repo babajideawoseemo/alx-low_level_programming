@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *main - Debugging
- *
- *Return: 0
-
+*main - Debugging
+*
+*Return: 0
+*/
 int main(void)
 {
 int value = 0;
