@@ -9,7 +9,7 @@
 int main(void)
 {
 unsigned long num1 = 0, num2 = 1, num3 = 0, total = 0;
-while (num3 <= 400000)
+while (num3 < 400000)
 {
 num3 = num2 + num1;
 num1 = num2;
