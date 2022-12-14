@@ -14,8 +14,8 @@ while (num3 <= 400000)
 num3 = num2 + num1;
 num1 = num2;
 num2 = num3;
-if((num1 % 2) == 0)
-total += num1;    
+if ((num1 % 2) == 0)
+total += num1;
 }
 printf("%ld\n", total);
 return (0);
