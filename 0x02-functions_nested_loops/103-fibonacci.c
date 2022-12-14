@@ -8,7 +8,7 @@
 
 int main(void)
 {
-unsigned long num1 = 1, num2 = 2, num3, total = 0;
+int num1 = 1, num2 = 2, num3, total = 0;
 while (num2 < 400000)
 {
 if (num2 % 2 == 0)
