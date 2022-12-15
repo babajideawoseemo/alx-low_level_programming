@@ -16,7 +16,7 @@ else
 for (ptr = 1; ptr <= n; ++ptr)
 {
 _putchar('_');
-_putchar('\n');
 }
+ _putchar('\n');
 }
 }
