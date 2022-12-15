@@ -1,36 +1,25 @@
 #include "main.h"
 
 /**
-*more_numbers - print 10 tines the number from 0 to 14
-*Return: Always 0
+*more_numbers - print 0 to 14 10 times
+*Result: Always 0.
 */
 
 void more_numbers(void)
 {
-int count;
-int first;
-int second;
-int result;
-count = 0;
-result = 0;
-for (count = 0; count < 10; count++)
+int num, row, count;
+for (row = 1; row <= 10; ++row)
 {
-for (result = 0; result <= 14; result++)
+for (count = 0; count <= 14; ++count)
 {
-if (result < 10)
+num = count;
+if (count > 9)
 {
-second = result;
+_putchar(1 + 48);
+num = count % 10;
 }
-else
-{
-first = result / 10;
-second = result % 10;
-_putchar(first + '0');
+_putchar(num + 48);
 }
-_putchar(second + '0');
-result++;
-}
-result = 0;
 _putchar('\n');
 }
 }
