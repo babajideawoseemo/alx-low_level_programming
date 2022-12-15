@@ -8,7 +8,7 @@
 void more_numbers(void)
 {
 int count;
- int first;
+int first;
 int second;
 int result;
 count = 0;
