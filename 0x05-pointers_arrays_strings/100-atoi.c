@@ -1,37 +1,24 @@
 #include "main.h"
 
 /**
-* _atoi - Convert a string to an integer
-* @s:  Thr pointer to convert
-*
-*Return: An integer value.
+*_atoi - convert to integer
+*@s: tge string pointer
+*Return: new array.
 */
 
 int _atoi(char *s)
 {
-unsigned int x = 0;
-int c, mi, isi;
-mi = 1;
-c = 0;
-isi = 0;
-while (s[c])
-{
-if (s[c] == 45)
-{
-mi *= -1;
-}
-while (s[c] >= 48 && s[c] <= 57)
-{
-isi = 1;
-c = (x * 10) + (s[c] - '0');
-c++;
-}
-if (isi == 1)
-{
+unsigned int num;
+int i;
+i = 1;
+num = 0;
+do {
+if (*s == '-')
+i *= -1;
+else if (*s >= '0' && *s <= '9')
+num = num * 10 + (*s - '0');
+else if (num > 0)
 break;
-}
-c++;
-}
-x *= mi;
-return (x);
+} while (*s++);
+return (num *i);
 }
