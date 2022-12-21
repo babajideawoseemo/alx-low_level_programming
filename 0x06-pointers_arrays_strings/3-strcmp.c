@@ -6,20 +6,17 @@
  *@s1: first string
  *@s2: second string
  *Return: Always 0.
- */
+*/
 
 int _strcmp(char *s1, char *s2)
 {
-int result;
-int i = 0;
-while (s1[i] == s2[i])
+while (*s1 == *s2)
 {
-if (s1[i] == s2[i])
+if (*s1 == '\0')
 {
-break;
+return (0);
 }
-i++;
-}
-result = s1[i] - s2[i];
-return (result);
+s1++;
+s2++;
+return (*s1 - *s2);
 }
