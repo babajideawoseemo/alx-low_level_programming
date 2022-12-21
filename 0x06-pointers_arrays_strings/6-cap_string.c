@@ -1,28 +1,27 @@
 #include "main.h"
 
 /**
- *cap_string - capitalizes all words in a string
- *@s: string
- *Return:address of s
- */
-
+ *cap_string - a function that capitalizes all words
+ *
+ *@s: pointer to char input array
+ *
+ *Return: the new string str
+*/
 char *cap_string(char *s)
 {
-int i = 0, j;
-char a[] = " \t\n,;.!?\"(){}";
-while (*(s + i) >= 'a' && *(s + i) <= 'z')
+int i;
+i = 0;
+while (s[i] != '\0')
 {
-if (*(s + i) >=  'a' && *(s + i) <= 'z')
+if (s[i] >= 97 && s[i] <= 122)
 {
 if (i == 0)
-*(s + i) -= 'a' - 'A';
-else
+s[i] -= 32;
+if (s[i - 1] == 32 || s[i - 1] == 9 || s[i - 1] == 10 || s[i - 1] == 44 ||
+s[i - 1] == 59 || s[i - 1] == 46 || s[i - 1] == 33 || s[i - 1] == 63 || s[i - 1] == 34 ||
+s[i - 1] == 40 || s[i - 1] == 41 || s[i - 1] == 123 || s[i - 1] == 124)
 {
-for (j = 0; j <= 12; j++)
-{
-if (a[j] == *(s + i - 1))
-*(s + i) -= 'a' - 'A';
-}
+s[i] -= 32;
 }
 }
 i++;
