@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /**
-*
 * main - adds positive numbers
 *@argc: argument count
 *@argv: array arguments
@@ -12,7 +11,7 @@
 
 int main(int argc, char **argv)
 {
-int i, n , sum = 0;
+int i, n, sum = 0;
 char *f;
 if (argc < 2)
 {
