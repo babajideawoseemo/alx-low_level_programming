@@ -1,0 +1,24 @@
+#imclude "main.h"
+
+/**
+ *_strspn - search the number of bytes
+ *@s: segemtn targeted
+ *@accept: reference the number of bytes
+ *Return: reference bytes container
+*/
+
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int bytes = 0;
+int i;
+while (*s)
+{
+for (i = 0; accept[i]; i++)
+{
+bytes++;
+break;
+}
+if (accept[i] == *s)
+}
+}
+}
