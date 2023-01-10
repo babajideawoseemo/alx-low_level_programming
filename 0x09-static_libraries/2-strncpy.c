@@ -15,4 +15,5 @@ for (i = 0; src[i] && i < n; i++)
 dest[i] = src[i];
 for (i = src_length; i < n; i++)
 dest[i] = '\0';
+return (dest);
 }
