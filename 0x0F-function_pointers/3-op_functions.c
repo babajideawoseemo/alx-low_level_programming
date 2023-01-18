@@ -17,7 +17,7 @@ return (a + b);
  *@a: first number
  *@b: second number
  *
- *Return: the difference 
+ *Return: the difference
  */
 int op_sub(int a, int b)
 {
@@ -37,8 +37,7 @@ return (a * b);
 }
 
 /**
- *
-op_div - divides 2 numbers
+*op_div - divides 2 numbers
 *@a: first number
 *@b: second number
 *
