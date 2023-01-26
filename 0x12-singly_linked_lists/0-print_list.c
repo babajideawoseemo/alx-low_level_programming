@@ -3,7 +3,7 @@
 /**
  * print_list - prints list
  * @h: parameter list
- *Return struct
+ *Return: struct
  */
 
 size_t print_list(const list_t *h)
