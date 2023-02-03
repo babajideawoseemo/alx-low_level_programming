@@ -19,7 +19,7 @@ return (num);
 /**
  *print_binary - prints the binary representation of a number
  *@n: num to be printed
- *@Return: void
+ *Return: void
  */
 
 void print_binary(unsigned long int n)
