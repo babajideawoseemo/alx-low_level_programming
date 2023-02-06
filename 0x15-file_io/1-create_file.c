@@ -2,7 +2,7 @@
 
 /**
 *create_file - Creates a file
-*filename: A pointer to the name of the file
+*@filename: A pointer to the name of the file
 *@text_content: A pointer to a string to write
 *Return: if the function fails -1
 */
