@@ -37,7 +37,10 @@ exit(98);
 }
 }
 }
-
+/**
+ *print_magic - print magic
+ *@e_ident: first indent
+ */
 void print_magic(unsigned char *e_ident)
 {
 int index;
@@ -53,12 +56,13 @@ printf(" ");
 }
 
 /**
+ *print_class - Prints the class of an header.
  *@e_ident: A pointer to an array containing the ELF class
  */
 void print_class(unsigned char *e_ident)
 {
 printf("          Class::        ");
-switch(e_ident[EI_CLASS])
+switch (e_ident[EI_CLASS])
 {
 case ELFCLASSNONE:
 printf("none\n");
