@@ -1,16 +1,9 @@
-#include <stdio.h>
-
-/**
- *myStartupFun - Apply constructor attribute
- *so rhat it is executed before main()
- */
-void myStartupFun(void) __attribute__ ((constructor));
-
-/**
- *myStartupFun - implementation of mytartupFun
- */
-void myStartupFun(void)
-{
-printf("You're beat! and yet, you must allow,\n");
-printf("I bore my house upon my back!\n");
-}
+         global   main 
+         extern   printf 
+main:
+         mov edi, format
+         xor  eax, eax 
+         call printf 
+         mov    eax, 0 
+         ret 
+format: db `Hello, Holberton\n`,0
